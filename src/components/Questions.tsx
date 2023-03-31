@@ -102,7 +102,7 @@ const Questions = () => {
                   bg={selectedAnswer == i ? "secondary" : "#c4c4c4"}
                   py={5}
                   px="sm"
-                  mx="md"
+                  mr="md"
                 >
                   {indexMapper[i]}
                 </Text>
@@ -135,8 +135,14 @@ const Questions = () => {
               onClick={handleNextQuestion}
             >
               <Flex align="center">
-                <Text mr="sm">Next Question</Text>
-                <IconArrowRight />
+                {questionNumber == questions.length - 1 ? (
+                  <Text mr="sm">Finsh Test</Text>
+                ) : (
+                  <>
+                    <Text mr="sm">Next Question</Text>
+                    <IconArrowRight />
+                  </>
+                )}
               </Flex>
             </Button>
           </Group>
