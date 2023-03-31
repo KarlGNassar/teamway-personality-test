@@ -41,6 +41,13 @@ const index = () => {
   };
 
   const openModal = (id: number, open: any) => {
+    // reset
+    setQuestionPrompt("");
+    setAnswer1("");
+    setAnswer2("");
+    setAnswer3("");
+    setAnswer4("");
+
     const question = questions.find((q) => q.id == id)!;
     setQuestionPrompt(question.prompt);
     setAnswer1(question.answers[0].text);
@@ -83,13 +90,6 @@ const index = () => {
     });
     setQuestions(editedQuestions);
     close();
-
-    // reset
-    setQuestionPrompt("");
-    setAnswer1("");
-    setAnswer2("");
-    setAnswer3("");
-    setAnswer4("");
   };
 
   const handleAdd = (close: any) => {
@@ -118,13 +118,6 @@ const index = () => {
 
     setQuestions((curr) => [...curr, newQuestion]);
     close();
-
-    // reset
-    setQuestionPrompt("");
-    setAnswer1("");
-    setAnswer2("");
-    setAnswer3("");
-    setAnswer4("");
   };
 
   const header = (
@@ -234,6 +227,12 @@ const index = () => {
             color="tertiary"
             onClick={() => {
               setAction(Action.ADD);
+              // reset
+              setQuestionPrompt("");
+              setAnswer1("");
+              setAnswer2("");
+              setAnswer3("");
+              setAnswer4("");
               open();
             }}
           >
