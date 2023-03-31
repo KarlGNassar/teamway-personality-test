@@ -2,6 +2,8 @@
 
 This is a simple personality test that analyzes whether you are an introvert or an extrovert
 
+Live Demo URL: [Personality Test](https://teamway-personality-test.vercel.app/)
+
 ### Checklist
 
 - [x] Questionnaire
@@ -26,6 +28,7 @@ Run Development Server
 ### Login to admin dashboard
 
 username: admin
+
 password: 123456
 
 ### Features I would've added if it was a real client:
@@ -33,3 +36,4 @@ password: 123456
 - Persistence of answers on page refresh (using Redux, Zustand, etc..)
 - Attach a backend and a database to the frontend
 - Secure the `/admin` page to let only logged in user to access it
+- Add unit tests
