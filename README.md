@@ -33,3 +33,4 @@ password: 123456
 - Persistence of answers on page refresh (using Redux, Zustand, etc..)
 - Attach a backend and a database to the frontend
 - Secure the `/admin` page to let only logged in user to access it
+- Add unit tests
