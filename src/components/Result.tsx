@@ -15,7 +15,7 @@ const Result: React.FC<ResultProps> = ({ answers }) => {
   };
 
   return (
-    <Container w="80vw">
+    <Container bg="white" p="xl" w="80vw">
       <Flex direction="column" align="center" justify="center">
         <Text size={50} weight="bold" color="secondary">
           Results Are In!
@@ -47,11 +47,11 @@ const Result: React.FC<ResultProps> = ({ answers }) => {
         ) : (
           <>
             <Text size="1.5rem">You are more of an extrovert..</Text>
-            <Blockquote cite="- Susan Cain" color="tertiary">
+            <Blockquote cite="- Randome Pinterest" color="tertiary">
               <Text size="1.2rem">
-                Stay true to your own natue. If you like to do things in a slow
-                and steady way, don't let others make you feel as if you have to
-                race.
+                I desperately need people. I recharge by sitting near those I
+                love, laughing at their antics, and sharing stories. Being by
+                myself is exhausting.
               </Text>
             </Blockquote>
             <iframe
