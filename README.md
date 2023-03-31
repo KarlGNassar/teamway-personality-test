@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Personality Test
 
-## Getting Started
+This is a simple personality test that analyzes whether you are an introvert or an extrovert
 
-First, run the development server:
+### Checklist
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [x] Questionnaire
+- [x] Result Page
+- [x] Admin Dashboard
+- [x] CRUD Operations
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Clone Repo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+`git clone https://github.com/KarlGNassar/teamway-personality-test.git`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Install Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`yarn`
 
-## Learn More
+Run Development Server
 
-To learn more about Next.js, take a look at the following resources:
+`yarn dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Login to admin dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+username: admin
+password: 123456
 
-## Deploy on Vercel
+### Features I would've added if it was a real client:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Persistence of answers on page refresh (using Redux, Zustand, etc..)
+- Attach a backend and a database to the frontend
+- Secure the `/admin` page to let only logged in user to access it
