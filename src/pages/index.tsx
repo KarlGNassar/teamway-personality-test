@@ -1,5 +1,6 @@
+import Footer from "@/components/Footer";
 import Questions from "@/components/Questions";
-import { Center } from "@mantine/core";
+import { Center, Flex } from "@mantine/core";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,7 +13,10 @@ export default function Home() {
       </Head>
       <main>
         <Center mih="100vh">
-          <Questions />
+          <Flex direction="column">
+            <Questions />
+            <Footer />
+          </Flex>
         </Center>
       </main>
     </>
