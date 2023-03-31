@@ -47,7 +47,7 @@ const Result: React.FC<ResultProps> = ({ answers }) => {
         ) : (
           <>
             <Text size="1.5rem">You are more of an extrovert..</Text>
-            <Blockquote cite="- Randome Pinterest" color="tertiary">
+            <Blockquote cite="- Random Pinterest" color="tertiary">
               <Text size="1.2rem">
                 I desperately need people. I recharge by sitting near those I
                 love, laughing at their antics, and sharing stories. Being by

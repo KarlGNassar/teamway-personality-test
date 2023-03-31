@@ -89,9 +89,6 @@ const Footer = () => {
           onChange={(e) => setPassword(e.currentTarget.value)}
           mt="md"
         />
-        <Group position="apart" mt="lg">
-          <Checkbox label="Remember me" color="secondary" />
-        </Group>
         {showError ? (
           <>
             <Space h="lg" />
