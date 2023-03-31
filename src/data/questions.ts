@@ -1,5 +1,6 @@
 const questions = [
   {
+    id: 1,
     prompt:
       "You're really busy at work and a colleague is telling you their life story and pesonal wores. You:",
     answers: [
@@ -22,6 +23,7 @@ const questions = [
     ],
   },
   {
+    id: 2,
     prompt:
       "You've been sitting in the doctor's waiting room for more than 25 minutes. You:",
     answers: [
@@ -44,6 +46,7 @@ const questions = [
     ],
   },
   {
+    id: 3,
     prompt:
       "You're having an animated discussion with a colleague regarding a project that you're in charge of. You:",
     answers: [
@@ -66,6 +69,7 @@ const questions = [
     ],
   },
   {
+    id: 4,
     prompt: "You are taking part in a guided tour of a museum. You:",
     answers: [
       {
