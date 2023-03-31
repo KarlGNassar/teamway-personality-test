@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
             "#fdfcf9",
           ],
           secondary: [
-            "#ab81cd",
+            "#630063",
             "#b38ed2",
             "#bc9ad7",
             "#c4a7dc",
