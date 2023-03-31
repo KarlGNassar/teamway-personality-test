@@ -1,17 +1,41 @@
-import React from "react";
-import { Blockquote, Container, Flex, Text } from "@mantine/core";
+import React, { Dispatch, SetStateAction } from "react";
+import {
+  Blockquote,
+  Button,
+  Container,
+  Flex,
+  Space,
+  Text,
+} from "@mantine/core";
 
 interface ResultProps {
   answers: number[];
+  setQuestionNumber: Dispatch<SetStateAction<number>>;
+  setSelectedAnswer: Dispatch<SetStateAction<number>>;
+  setAnswers: Dispatch<SetStateAction<number[]>>;
+  setHasFinished: Dispatch<SetStateAction<boolean>>;
 }
 
-const Result: React.FC<ResultProps> = ({ answers }) => {
+const Result: React.FC<ResultProps> = ({
+  answers,
+  setQuestionNumber,
+  setSelectedAnswer,
+  setAnswers,
+  setHasFinished,
+}) => {
   const sumResult = (answers: number[]) => {
     let sum = 0;
     for (let answer of answers) {
       sum += answer;
     }
     return sum;
+  };
+
+  const resetTest = () => {
+    setQuestionNumber(0);
+    setSelectedAnswer(-1);
+    setAnswers([]);
+    setHasFinished(false);
   };
 
   return (
@@ -68,6 +92,10 @@ const Result: React.FC<ResultProps> = ({ answers }) => {
             </p>
           </>
         )}
+
+        <Button color="secondary" mt="xl" onClick={resetTest}>
+          Retake Test
+        </Button>
       </Flex>
     </Container>
   );

@@ -67,7 +67,13 @@ const Questions = () => {
   return (
     <>
       {hasFinished ? (
-        <Result answers={answers} />
+        <Result
+          answers={answers}
+          setQuestionNumber={setQuestionNumber}
+          setSelectedAnswer={setSelectedAnswer}
+          setAnswers={setAnswers}
+          setHasFinished={setHasFinished}
+        />
       ) : (
         <Container bg="white" p="xl" w="80vw" ref={containerRef}>
           <Flex direction="column" pb="lg" mih={150}>
